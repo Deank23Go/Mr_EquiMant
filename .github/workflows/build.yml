@@ -40,5 +40,5 @@ jobs:
 
       - name: Build and analyze
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}  # ← ¡Verifica que el nombre coincida!
         run: ./gradlew build sonar --info --stacktrace --no-configuration-cache
