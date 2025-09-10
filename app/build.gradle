@@ -49,8 +49,10 @@ sonar {
     properties {
         property "sonar.projectKey", "Deank23Go_Mr_EquiMant"
         property "sonar.organization", "deank23go"
-        property "sonar.host.url", "https://sonarcloud.io" // Add this for SonarCloud
+        property "sonar.host.url", "https://sonarcloud.io" // ✅ URL CORREGIDA (sin espacios)
         property "sonar.java.source", "21" // Specify Java version
         property "sonar.sourceEncoding", "UTF-8" // Set encoding
+        // Opcional: Para ejecutar localmente, descomenta la siguiente línea y usa -Dsonar.token=TU_TOKEN
+        // property "sonar.token", System.getenv("SONAR_TOKEN")
     }
 }
