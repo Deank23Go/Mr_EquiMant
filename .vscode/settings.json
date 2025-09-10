@@ -1,3 +1,12 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ],
+  "java.jdt.ls.vmargs": "-javaagent:/ruta/a/lombok.jar -Xmx2G",
+  "java.annotation.processing.enabled": true,
+  "java.annotation.processing.processors": [
+    "lombok.launch.AnnotationProcessorHider$AnnotationProcessor"
+  ],
+  "java.compile.nullAnalysis.mode": "automatic"
 }
